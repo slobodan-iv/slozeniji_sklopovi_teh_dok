@@ -1,0 +1,2134 @@
+<!doctype html>
+<html lang="sr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Merriweather|Tangerine|Caveat" rel="stylesheet">
+    <!-- Bootstrap CSS
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Ланчани пар!</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="Pictures/logo3.png" width="90" height="60" class="d-inline-block align-top rounded" alt="M3Design"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Ланчани парови</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                Ремени парови
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="kaisni_par.html">Пљоснати ремен</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="remeni_par.html">Клинасти ремен</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kuciste.html">Моделирање кућишта</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sklopni_crtez_i_sablon.html">Склопни цртеж и израда шаблона</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                Повезани Web site-ови
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="https://slobodan-iv.github.io/standardni_me/">Моделирање станд. маш. ел.</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="https://slobodan-iv.github.io/modeliranje_prenosnika/">Моделирање преносника</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="https://slobodan-iv.github.io/modeliranje_zupcastog_prenosnika/">Моделирање зупчастог преносника</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="https://slobodan-iv.github.io/modeliranje_i_simulacija_p_r_2022/">Моделирање и сим. пом. рач. шк. 2022/23. год.</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="https://slobodan-iv.github.io/modeliranje_i_simulacija_p_r/">Моделирање и симулација пом. рач. шк. 2021/22. год.</a>
+                </li>
+                </li>
+                  <a class="dropdown-item" href="https://slobodan-iv.github.io/modeliranje_izborni/">Моделирање и симулација пом. рач. - изб. пр.</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="https://slobodan-iv.github.io/konstruisanje/">Конструисање</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav><!-- navbar -->
+    <!-- container -->
+    <div class="container">
+      <!-- Content here -->
+      <div>
+        <h1>Прорачун моделирање и цртежи ланчаног пара шк. 2022/23. год.</h1>
+        <div class="row justify-content-center">
+          <div class="col-12 col-sm-12 col-md-11 col-lg-10">
+            <ul class="nav nav-tabs" id="lancani_par" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="postavka-tab" data-bs-toggle="tab" data-bs-target="#postavka" type="button" role="tab" aria-controls="postavka" aria-selected="true">Поставка задатка</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="proracun-tab" data-bs-toggle="tab" data-bs-target="#proracun" type="button" role="tab" aria-controls="proracun" aria-selected="true">Прорачун</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="lancani_par_modeliranje-tab" data-bs-toggle="tab" data-bs-target="#lancani_par_modeliranje" type="button" role="tab" aria-controls="lancani_par_modeliranje" aria-selected="false">Моделирање и цртежи</button>
+              </li>
+            </ul>
+            <div class="tab-content" id="lancani_par_TabContent">
+              <div class="tab-pane fade show active" id="postavka" role="tabpanel" aria-labelledby="postavka-tab">
+                <div class="accordion" id="postavka_zadatka">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="ul_podaci">
+                      <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_ul_podaci" aria-expanded="true" aria-controls="collapse_ul_podaci">
+                        Улазни подаци:
+                      </button>
+                    </h2>
+                    <div id="collapse_ul_podaci" class="accordion-collapse collapse show" aria-labelledby="ul_podaci" data-bs-parent="#postavka_zadatka">
+                      <div class="accordion-body">
+                        <p>
+                          Израчунати потребне параметре и моделирати ланчани пар на основу улазних података:
+                        </p>
+                        <p>
+                          Снага која се преноси: <img src="Pictures/png/P=.png" alt="P="> 60 <img src="Pictures/png/kW.png" alt="kW">
+                        </p>
+                        <p>
+                          Број обртаја погонског ланчаника: <img src="Pictures/png/n1=.png" alt="n1="> 60 <img src="Pictures/png/min_1.png" alt="min-1">
+                        </p>
+                        <p>
+                          Преносни однос: <img src="Pictures/png/i=.png" alt="i="> 2 
+                        </p>
+                        <p>
+                          Број зубаца погонског ланчаника: <img src="Pictures/png/z1=.png" alt="z1="> 17
+                        </p>
+                        <p>
+                          Ланац ради у средини са најбољим подмазивањем: <img src="Pictures/png/ksi_p=.png" alt="&xi;p="> 1 
+                        </p>
+                        <p>
+                          Фактор спољних динамичких сила: <img src="Pictures/png/KA=.png" alt="&xi;KA="> 1.25
+                        </p>
+                        <h2>Потребно је:</h2>
+                        <ol>
+                          <li>
+                            прорачунати ланчани преносник снаге из услова да се снага пренесе помоћу троредног ваљкастог ланца,
+                          </li>
+                          <li>
+                            измоделирати ланчани преносник урадити цртеже и по могућности направити анимацију кретања.
+                          </li>
+                        </ol>
+                        <h3>
+                          Литература - извор знања:
+                        </h3>
+                        <p>
+                          Машински елементи II - Спасоје Драпић
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="animacija">
+                      <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_animacija" aria-expanded="true" aria-controls="collapse_animacija">
+                        Ланчани пар - принцип рада и анимација:
+                      </button>
+                    </h2>
+                    <div id="collapse_animacija" class="accordion-collapse collapse" aria-labelledby="animacija" data-bs-parent="#postavka_zadatka">
+                      <div class="accordion-body">
+                        <div class="card ratio ratio-16x9">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/DAIe3MxZUUk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="download">
+                      <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_download" aria-expanded="true" aria-controls="collapse_download">
+                        Download докумената:
+                      </button>
+                    </h2>
+                    <div id="collapse_download" class="accordion-collapse collapse" aria-labelledby="download" data-bs-parent="#postavka_zadatka">
+                      <div class="accordion-body">
+                        <p>
+                          <a href="static/Lancani_par_troredni_valjkasti_lanac_prazno.xls">"Excel"-ов документ, прорачун без вредности - download</a>
+                        </p>
+                        <p>
+                          <a href="static/Lancani_par_troredni_valjkasti_lanac.pdf">"PDF" документ, пример прорачуна - download</a>
+                        </p>
+                        <p>
+                          <a href="static/Tablice_lancani_parovi_2020.pdf">"PDF" документ, таблице за прорачун - download</a>
+                        </p>
+                        <p>
+                          <a href="static/Lancani_parovi_2021_2022.pdf">"PDF" документ, изведени обрасци за прорачун ланчаног пара - download</a>
+                        </p>
+                        <p>
+                          <a href="static/Modeliranje_delova_trorednog_lancanog_para.pdf">"PDF" документ, моделирање делова троредног ланчаног пара - download</a>
+                        </p>
+                        <p>
+                          <a href="static/Modeliranje_sklopa_trorednog_lancanog_para.pdf">"PDF" документ, моделирање склопа троредног ланчаног пара - download</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="proracun" role="tabpanel" aria-labelledby="proracun-tab">
+                <div class="accordion" id="proracun_lancanog_para">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="st_sigurnosti">
+                      <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_st_sigurnosti" aria-expanded="true" aria-controls="collapse_st_sigurnosti">
+                        Провера степена сигурности:
+                      </button>
+                    </h2>
+                    <div id="collapse_st_sigurnosti" class="accordion-collapse collapse show" aria-labelledby="st_sigurnosti" data-bs-parent="#proracun_lancanog_para">
+                      <div class="accordion-body">
+                        <p>
+                          <strong>Осно </strong> растојање: 
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/a=.png" alt="a="> 2032 <img src="Pictures/png/mm.png" alt="mm">
+                        </p>
+                        <p>
+                          <strong>
+                            Из услова 
+                          </strong>
+                          да се снага пренесе помоћу троредног ваљкастог ланца за:
+                        </p>
+                        <p class="left_padding">
+                          <strong>
+                            снагу 
+                          </strong>
+                          : <img src="Pictures/png/P=.png" alt="P="> 60 <img src="Pictures/png/kW.png" alt="kW">
+                        </p>
+                        <p class="left_padding"> 
+                          <strong>
+                            број 
+                          </strong>
+                           обртаја: <img src="Pictures/png/n1=.png" alt="n1="> 60 <img src="Pictures/png/min_1.png" alt="min-1">
+                        </p>
+                        <p class="left_padding">
+                          стандардни
+                          <strong>
+                             корак 
+                          </strong>
+                          са дијаграма на Сл. 4.67 је: 
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/p_korak=.png" alt="p="> 50.8 <img src="Pictures/png/mm.png" alt="mm">
+                        </p>
+                        <div class="accordion" id="accordion_Sl4_67">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading_Sl4_67">
+                              <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_Sl4_67" aria-expanded="true" aria-controls="collapse_Sl4_67">
+                                Сл. 4.67 - Номинална снага за ваљкасте ланце
+                              </button>
+                            </h2>
+                            <div id="collapse_Sl4_67" class="accordion-collapse collapse" aria-labelledby="heading_Sl4_67" data-bs-parent="#accordion_Sl4_67">
+                              <div class="accordion-body">
+                                <img src="Pictures/Sl4_67.jpg" width="100%" alt="Сл. 4.67">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <p>
+                          <strong>
+                            Број зубаца 
+                          </strong>
+                          гоњеног ланчаника: 
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/z2=.png" alt="z2="> 34 
+                        </p>
+                        <p>
+                          <strong>
+                            Подеони пречници 
+                          </strong>
+                          : 
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/d1=.png" alt="d1="> 276.463 <img src="Pictures/png/mm.png" alt="mm">, <img src="Pictures/png/d2=.png" alt="d2="> 550.568 <img src="Pictures/png/mm.png" alt="mm">
+                        </p>
+                        <p>
+                          <strong>
+                            Број 
+                          </strong>
+                          чланака ланца: 
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/Z=.png" alt="Z="> 105.683 
+                        </p>
+                        <p class="left_padding">
+                          усвајам: <img src="Pictures/png/Z_solo=.png" alt="Z="> 106 
+                        </p>
+                        <p>
+                          <strong>
+                            Угао 
+                          </strong>
+                          обавијања ланчаника се рачуна на основу израза:
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/sin_gama=.png" alt="sin&gamma;="> 0.06764 
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/gama=.png" alt="&gamma;="> 0.0676925 rad
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/gama=.png" alt="&gamma;="> 3.878 &deg;
+                        </p>
+                        <p>
+                          <strong>
+                            Највећа снага 
+                          </strong>
+                          <img src="Pictures/png/P0.png" alt="P0"> коју ланац корака <img src="Pictures/png/p_korak=.png" alt="p="> 50.8 <img src="Pictures/png/mm.png" alt="mm"> може да пренесе за <img src="Pictures/png/n1=.png" alt="n1="> 60 <img src="Pictures/png/min_1.png" alt="min-1">, за троредни ланац са Сл. 4.67 износи:
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/P0=.png" alt="P0="> 75 <img src="Pictures/png/kW.png" alt="kW">
+                        </p>
+                        <div class="accordion" id="accordion_Sl4_67x1">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading_Sl4_67x1">
+                              <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_Sl4_67x1" aria-expanded="true" aria-controls="collapse_Sl4_67x1">
+                                Сл. 4.67 - Номинална снага за ваљкасте ланце
+                              </button>
+                            </h2>
+                            <div id="collapse_Sl4_67x1" class="accordion-collapse collapse" aria-labelledby="heading_Sl4_67x1" data-bs-parent="#accordion_Sl4_67x1">
+                              <div class="accordion-body">
+                                <img src="Pictures/Sl4_67.jpg" width="100%" alt="Сл. 4.67">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <p>
+                          <strong>
+                            Брзина ланца 
+                          </strong>
+                          :
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/v=.png" alt="v="> 0.869 <img src="Pictures/png/m_s.png" alt="m/s">
+                        </p>
+                        <p>
+                          <strong>
+                            Центрифугална сила 
+                          </strong>
+                          :
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/Fc=.png" alt="Fc="> 0.024 <img src="Pictures/png/kN.png" alt="kN">
+                        </p>
+                        <p>
+                          <strong>
+                             Маса јединице 
+                          </strong>
+                          дужине ланца Т 4.9 ( за троредни ланац за повећана опетерећења ):
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/q=.png" alt="q="> 32 <img src="Pictures/png/kg_m.png" alt="kg/m">
+                        </p>
+                        <div class="accordion" id="accordion_T4_9">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading_T4_9">
+                              <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_T4_9" aria-expanded="true" aria-controls="collapse_T4_9">
+                                Т 4.9 - Мере ланаца са ваљцима
+                              </button>
+                            </h2>
+                            <div id="collapse_T4_9" class="accordion-collapse collapse" aria-labelledby="heading_T4_9" data-bs-parent="#accordion_T4_9">
+                              <div class="accordion-body">
+                                <img src="Pictures/T4_9.jpg" width="100%" alt="T 4.9">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <p>
+                          <strong>
+                            Обимна сила 
+                          </strong>
+                          :
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/Ft=.png" alt="Ft="> 69.082 <img src="Pictures/png/kN.png" alt="kN">
+                        </p>
+                        <p>
+                          <strong>
+                            Степен сигурности 
+                          </strong>
+                          против динамичког лома ланца:
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/S=.png" alt="S="> 1.261 <strong>незадовољава</strong>
+                        </p>
+                        <p>
+                          <strong>
+                            Фактор 
+                          </strong>
+                          сила разарања:
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/ksi_razaranja=.png" alt="&xi;D="> 0.17
+                        </p>
+                        <div class="accordion" id="accordion_odn_sila_raz">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading_odn_sila_raz">
+                              <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_odn_sila_raz" aria-expanded="true" aria-controls="collapse_odn_sila_raz">
+                                Однос сила разарања
+                              </button>
+                            </h2>
+                            <div id="collapse_odn_sila_raz" class="accordion-collapse collapse" aria-labelledby="heading_odn_sila_raz" data-bs-parent="#accordion_odn_sila_raz">
+                              <div class="accordion-body">
+                                <img src="Pictures/Odnos_sila_razaranja.jpg" width="100%" alt="Однос сила разарања">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <p>
+                          <strong>
+                            Фактор 
+                          </strong>
+                          унутрашњих динамичких сила Т 4.12:
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/ksi_d=.png" alt="&xi;d="> 1.16
+                        </p>
+                        <div class="accordion" id="accordion_T4_12">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading_T4_12">
+                              <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_T4_12" aria-expanded="true" aria-controls="collapse_T4_12">
+                                Т 4.12 - Фактор унутрашњих динамичких сила
+                              </button>
+                            </h2>
+                            <div id="collapse_T4_12" class="accordion-collapse collapse" aria-labelledby="heading_T4_12" data-bs-parent="#accordion_T4_12">
+                              <div class="accordion-body">
+                                <img src="Pictures/T4_12.jpg" width="100%" alt="T 4.12">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <p>
+                          <strong>
+                            Прекидна сила 
+                          </strong>
+                          ланца Т 4.9 ( за троредни ланац за повећана опетерећења ):
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/FM=.png" alt="FM="> 743 <img src="Pictures/png/kN.png" alt="kN">
+                        </p>
+                        <p>
+                          <strong>Степен сигурности</strong> се креће у границама: од <strong>1.5 до 2.5</strong>, и израчунати степен сигурности <strong>незадовољава</strong>, па са дијаграма са Сл. 4.67 усвајам следећи корак ланца:
+                        </p>
+                        <p>
+                          <strong>Осно </strong> растојање: 
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/a=.png" alt="a="> 2540 <img src="Pictures/png/mm.png" alt="mm">
+                        </p>
+                        <p>
+                          <strong>
+                            Из услова 
+                          </strong>
+                          да се снага пренесе помоћу троредног ваљкастог ланца за:
+                        </p>
+                        <p class="left_padding">
+                          <strong>
+                            снагу 
+                          </strong>
+                          : <img src="Pictures/png/P=.png" alt="P="> 60 <img src="Pictures/png/kW.png" alt="kW">
+                        </p>
+                        <p class="left_padding"> 
+                          <strong>
+                            број 
+                          </strong>
+                           обртаја: <img src="Pictures/png/n1=.png" alt="n1="> 60 <img src="Pictures/png/min_1.png" alt="min-1">
+                        </p>
+                        <p class="left_padding">
+                          <strong>
+                            први 
+                          </strong>
+                          већи стандардни
+                          <strong>
+                             корак 
+                          </strong>
+                          са дијаграма на Сл. 4.67 је: 
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/p_korak=.png" alt="p="> 63.5 <img src="Pictures/png/mm.png" alt="mm">
+                        </p>
+                        <div class="accordion" id="accordion_Sl4_67x2">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading_Sl4_67x2">
+                              <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_Sl4_67x2" aria-expanded="true" aria-controls="collapse_Sl4_67x2">
+                                Сл. 4.67 - Номинална снага за ваљкасте ланце
+                              </button>
+                            </h2>
+                            <div id="collapse_Sl4_67x2" class="accordion-collapse collapse" aria-labelledby="heading_Sl4_67x2" data-bs-parent="#accordion_Sl4_67x2">
+                              <div class="accordion-body">
+                                <img src="Pictures/Sl4_67.jpg" width="100%" alt="Сл. 4.67">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <p>
+                          <strong>
+                            Број зубаца 
+                          </strong>
+                          гоњеног ланчаника: 
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/z2=.png" alt="z2="> 34 
+                        </p>
+                        <p>
+                          <strong>
+                            Подеони пречници 
+                          </strong>
+                          : 
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/d1=.png" alt="d1="> 345.579 <img src="Pictures/png/mm.png" alt="mm">, <img src="Pictures/png/d2=.png" alt="d2="> 688.210 <img src="Pictures/png/mm.png" alt="mm">
+                        </p>
+                        <p>
+                          <strong>
+                            Број 
+                          </strong>
+                          чланака ланца: 
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/Z=.png" alt="Z="> 105.683 
+                        </p>
+                        <p class="left_padding">
+                          усвајам: <img src="Pictures/png/Z_solo=.png" alt="Z="> 106 
+                        </p>
+                        <p>
+                          <strong>
+                            Угао 
+                          </strong>
+                          обавијања ланчаника се рачуна на основу израза:
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/sin_gama=.png" alt="sin&gamma;="> 0.06764 
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/gama=.png" alt="&gamma;="> 0.0676925 rad
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/gama=.png" alt="&gamma;="> 3.878 &deg;
+                        </p>
+                        <p>
+                          <strong>
+                            Највећа снага 
+                          </strong>
+                          <img src="Pictures/png/P0.png" alt="P0"> коју ланац корака <img src="Pictures/png/p_korak=.png" alt="p="> 63.5 <img src="Pictures/png/mm.png" alt="mm"> може да пренесе за <img src="Pictures/png/n1=.png" alt="n1="> 60 <img src="Pictures/png/min_1.png" alt="min-1">, за троредни ланац са Сл. 4.67 износи:
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/P0=.png" alt="P0="> 125 <img src="Pictures/png/kW.png" alt="kW">
+                        </p>
+                        <div class="accordion" id="accordion_Sl4_67x3">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading_Sl4_67x3">
+                              <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_Sl4_67x3" aria-expanded="true" aria-controls="collapse_Sl4_67x3">
+                                Сл. 4.67 - Номинална снага за ваљкасте ланце
+                              </button>
+                            </h2>
+                            <div id="collapse_Sl4_67x3" class="accordion-collapse collapse" aria-labelledby="heading_Sl4_67x3" data-bs-parent="#accordion_Sl4_67x3">
+                              <div class="accordion-body">
+                                <img src="Pictures/Sl4_67.jpg" width="100%" alt="Сл. 4.67">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <p>
+                          <strong>
+                            Брзина ланца 
+                          </strong>
+                          :
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/v=.png" alt="v="> 1.086 <img src="Pictures/png/m_s.png" alt="m/s">
+                        </p>
+                        <p>
+                          <strong>
+                            Центрифугална сила 
+                          </strong>
+                          :
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/Fc=.png" alt="Fc="> 0.057 <img src="Pictures/png/kN.png" alt="kN">
+                        </p>
+                        <p>
+                          <strong>
+                             Маса јединице 
+                          </strong>
+                          дужине ланца Т 4.9 ( за троредни ланац за повећана опетерећења ):
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/q=.png" alt="q="> 48 <img src="Pictures/png/kg_m.png" alt="kg/m">
+                        </p>
+                        <div class="accordion" id="accordion_T4_9x1">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading_T4_9x1">
+                              <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_T4_9x1" aria-expanded="true" aria-controls="collapse_T4_9x1">
+                                Т 4.9 - Мере ланаца са ваљцима
+                              </button>
+                            </h2>
+                            <div id="collapse_T4_9x1" class="accordion-collapse collapse" aria-labelledby="heading_T4_9x1" data-bs-parent="#accordion_T4_9x1">
+                              <div class="accordion-body">
+                                <img src="Pictures/T4_9.jpg" width="100%" alt="T 4.9">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <p>
+                          <strong>
+                            Обимна сила 
+                          </strong>
+                          :
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/Ft=.png" alt="Ft="> 55.265 <img src="Pictures/png/kN.png" alt="kN">
+                        </p>
+                        <p>
+                          <strong>
+                            Степен сигурности 
+                          </strong>
+                          против динамичког лома ланца:
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/S=.png" alt="S="> 2.544 <strong>задовољава</strong>
+                        </p>
+                        <p>
+                          <strong>
+                            Фактор 
+                          </strong>
+                          сила разарања:
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/ksi_razaranja=.png" alt="&xi;D="> 0.17
+                        </p>
+                        <div class="accordion" id="accordion_odn_sila_razx1">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading_odn_sila_razx1">
+                              <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_odn_sila_razx1" aria-expanded="true" aria-controls="collapse_odn_sila_razx1">
+                                Однос сила разарања
+                              </button>
+                            </h2>
+                            <div id="collapse_odn_sila_razx1" class="accordion-collapse collapse" aria-labelledby="heading_odn_sila_razx1" data-bs-parent="#accordion_odn_sila_razx1">
+                              <div class="accordion-body">
+                                <img src="Pictures/Odnos_sila_razaranja.jpg" width="100%" alt="Однос сила разарања">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <p>
+                          <strong>
+                            Фактор 
+                          </strong>
+                          унутрашњих динамичких сила Т 4.12:
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/ksi_d=.png" alt="&xi;d="> 1.16
+                        </p>
+                        <div class="accordion" id="accordion_T4_12x1">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading_T4_12x1">
+                              <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_T4_12x1" aria-expanded="true" aria-controls="collapse_T4_12x1">
+                                Т 4.12 - Фактор унутрашњих динамичких сила
+                              </button>
+                            </h2>
+                            <div id="collapse_T4_12x1" class="accordion-collapse collapse" aria-labelledby="heading_T4_12x1" data-bs-parent="#accordion_T4_12x1">
+                              <div class="accordion-body">
+                                <img src="Pictures/T4_12.jpg" width="100%" alt="T 4.12">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <p>
+                          <strong>
+                            Прекидна сила 
+                          </strong>
+                          ланца Т 4.9 ( за троредни ланац за повећана опетерећења ):
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/FM=.png" alt="FM="> 1200 <img src="Pictures/png/kN.png" alt="kN">
+                        </p>
+                        <p>
+                          Промена <strong>осног </strong>растојања због <strong>усвојеног</strong> <img src="Pictures/png/Z_solo=.png" alt="Z="> 106: 
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/a_ponovo=.png" alt="a="> 2550.085 <img src="Pictures/png/mm.png" alt="mm">
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="snaga">
+                      <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_snaga" aria-expanded="true" aria-controls="collapse_snaga">
+                        Провера преноса снаге у радним условима:
+                      </button>
+                    </h2>
+                    <div id="collapse_snaga" class="accordion-collapse collapse" aria-labelledby="snaga" data-bs-parent="#proracun_lancanog_para">
+                      <div class="accordion-body">
+                        <p>
+                          <strong>
+                            Помоћу изабраног 
+                          </strong>
+                          ланца у радним условима се може пренети снага:
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/P_provera=.png" alt="P="> 62.580 <img src="Pictures/png/kW.png" alt="kW">
+                        </p>
+                        <p>
+                          <strong>
+                            Помоћу изабраног 
+                          </strong>
+                          ланца у лабораторијским условима се може пренети снага:
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/P0=.png" alt="P0="> 125 <img src="Pictures/png/kW.png" alt="kW">
+                        </p>
+                        <p>
+                          <strong>
+                            Фактор 
+                          </strong>
+                          врсте ланца:
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/ksi_l=.png" alt="&xi;l="> 1
+                        </p>
+                        <div class="accordion" id="faktor_vrste_lanca">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading_faktor_vrste_lanca">
+                              <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_faktor_vrste_lanca" aria-expanded="true" aria-controls="collapse_faktor_vrste_lanca">
+                                Фактор врсте ланца
+                              </button>
+                            </h2>
+                            <div id="collapse_faktor_vrste_lanca" class="accordion-collapse collapse" aria-labelledby="heading_faktor_vrste_lanca" data-bs-parent="#faktor_vrste_lanca">
+                              <div class="accordion-body">
+                                <img src="Pictures/Faktor_vrste_lanca.jpg" width="100%" alt="Фактор врсте ланца">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <p>
+                          <strong>
+                            Фактор 
+                          </strong>
+                          осног растојања:
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/ksi_a=.png" alt="&xi;a="> 1
+                        </p>
+                        <div class="accordion" id="faktor_osnog_rastojanja">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading_faktor_osnog_rastojanja">
+                              <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_faktor_osnog_rastojanja" aria-expanded="true" aria-controls="collapse_faktor_osnog_rastojanja">
+                                Фактор осног растојања
+                              </button>
+                            </h2>
+                            <div id="collapse_faktor_osnog_rastojanja" class="accordion-collapse collapse" aria-labelledby="heading_faktor_osnog_rastojanja" data-bs-parent="#faktor_osnog_rastojanja">
+                              <div class="accordion-body">
+                                <img src="Pictures/Faktor_osnog_rastojanja.jpg" width="100%" alt="Фактор осног растојања">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <p>
+                          <strong>
+                            Фактор 
+                          </strong>
+                          преносног односа:
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/ksi_i=.png" alt="&xi;i="> 1.08
+                        </p>
+                        <div class="accordion" id="faktor_osnog_rastojanja">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading_faktor_prenosnog_odnosa">
+                              <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_faktor_prenosnog_odnosa" aria-expanded="true" aria-controls="collapse_faktor_prenosnog_odnosa">
+                                Фактор преносног односа
+                              </button>
+                            </h2>
+                            <div id="collapse_faktor_prenosnog_odnosa" class="accordion-collapse collapse" aria-labelledby="heading_faktor_prenosnog_odnosa" data-bs-parent="#faktor_osnog_rastojanja">
+                              <div class="accordion-body">
+                                <img src="Pictures/Faktor_prenosnog_rastojanja.jpg" width="100%" alt="Фактор преносног односа">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <p>
+                          <strong>
+                            Фактор 
+                          </strong>
+                          подмазивања:
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/ksi_p=.png" alt="&xi;p="> 1 
+                        </p>
+                        <div class="accordion" id="faktor_podmazivanja">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading_faktor_podmazivanja">
+                              <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_faktor_podmazivanja" aria-expanded="true" aria-controls="collapse_faktor_podmazivanja">
+                                Фактор подмазивања
+                              </button>
+                            </h2>
+                            <div id="collapse_faktor_podmazivanja" class="accordion-collapse collapse" aria-labelledby="heading_faktor_podmazivanja" data-bs-parent="#faktor_podmazivanja">
+                              <div class="accordion-body">
+                                <img src="Pictures/Faktor_podmazivanja.jpg" width="100%" alt="Фактор подмазивања">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <p>
+                          <strong>
+                            Фактор 
+                          </strong>
+                          броја ланчаника:
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/ksi_x=.png" alt="&xi;x="> 1 
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/x=.png" alt="x="> 2 
+                        </p>
+                        <div class="accordion" id="faktor_broja_lancanika">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading_faktor_broja_lancanika">
+                              <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_faktor_broja_lancanika" aria-expanded="true" aria-controls="collapse_faktor_broja_lancanika">
+                                Фактор броја ланчаника
+                              </button>
+                            </h2>
+                            <div id="collapse_faktor_broja_lancanika" class="accordion-collapse collapse" aria-labelledby="heading_faktor_broja_lancanika" data-bs-parent="#faktor_broja_lancanika">
+                              <div class="accordion-body">
+                                <img src="Pictures/Faktor_broja_lancanika.jpg" width="100%" alt="Фактор броја ланчаника">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <p>
+                          <strong>
+                            Фактор 
+                          </strong>
+                          спољних динамичких сила: 
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/KA=.png" alt="&xi;KA="> 1.25
+                        </p>
+                        <p>
+                          <strong>
+                            Фактор 
+                          </strong>
+                          броја зубаца малог ланчаника:
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/ksi_z=.png" alt="&xi;z="> 1.128 
+                        </p>
+                        <p>
+                          <strong>
+                             Притисак 
+                          </strong>
+                          у клизном пару треба да је мањи од дозвољеног:
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/uslov_pritiska.png" alt="притисак мањи од дозвољеног">
+                        </p>
+                        <p>
+                          <strong>
+                            Фактор 
+                          </strong>
+                          радног века:
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/ksi_t=.png" alt="&xi;t="> 0.654
+                        </p>
+                        <p>
+                          <strong>
+                            Додирна 
+                          </strong>
+                          површина у зглобу ланца Т 4.9:
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/dod_povrsina=.png" alt="A="> 3825 <img src="Pictures/png/mm2.png" alt="mm^2">
+                        </p>
+                        <div class="accordion" id="accordion_T4_9x2">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading_T4_9x2">
+                              <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_T4_9x2" aria-expanded="true" aria-controls="collapse_T4_9x2">
+                                Т 4.9 - Мере ланаца са ваљцима
+                              </button>
+                            </h2>
+                            <div id="collapse_T4_9x2" class="accordion-collapse collapse" aria-labelledby="heading_T4_9x2" data-bs-parent="#accordion_T4_9x2">
+                              <div class="accordion-body">
+                                <img src="Pictures/T4_9.jpg" width="100%" alt="T 4.9">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <p>
+                          <strong>
+                            Површинска 
+                          </strong>
+                          издржљивост ланца Т 4.13:
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/PN=.png" alt="PN="> 25.6 <img src="Pictures/png/N_mm2.png" alt="N/mm^2">
+                        </p>
+                        <div class="accordion" id="accordion_T4_13">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading_T4_13">
+                              <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_T4_13" aria-expanded="true" aria-controls="collapse_T4_13">
+                                Т 4.13 - Површинска издржљивост ланца за услове испитивања
+                              </button>
+                            </h2>
+                            <div id="collapse_T4_13" class="accordion-collapse collapse" aria-labelledby="heading_T4_13" data-bs-parent="#accordion_T4_13">
+                              <div class="accordion-body">
+                                <img src="Pictures/T4_13.jpg" width="100%" alt="T 4.13">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <p>
+                          <strong>
+                            Радни 
+                          </strong>
+                          век ланца::
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/th=.png" alt="t="> 53680.744 <img src="Pictures/png/h.png" alt="h">
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="proracun_vratila">
+                      <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_proracun_vratila" aria-expanded="true" aria-controls="collapse_proracun_vratila">
+                        Прорачун вратила:
+                      </button>
+                    </h2>
+                    <div id="collapse_proracun_vratila" class="accordion-collapse collapse" aria-labelledby="proracun_vratila" data-bs-parent="#proracun_lancanog_para">
+                      <div class="accordion-body">
+                        <h3>Погонско вратило</h3>
+                        <p>
+                          <strong>
+                            Снага 
+                          </strong>
+                          која се преноси: 
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/P=.png" alt="P="> 60 <img src="Pictures/png/kW.png" alt="kW">
+                        </p>
+                        <p>
+                          <strong>
+                            Број 
+                          </strong>
+                           обртаја: 
+                        </p>
+                        <p class="left_padding"> 
+                          <img src="Pictures/png/n1=.png" alt="n1="> 60 <img src="Pictures/png/min_1.png" alt="min-1">
+                        </p>
+                        <p>
+                          <strong>
+                            Угаона 
+                          </strong>
+                          брзина: 
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/ug_brzina=.png" alt="&omega;="> 6.28 <img src="Pictures/png/rad_s.png" alt="rad/s">
+                        </p>
+                        <p>
+                          <strong>
+                            Обртни 
+                          </strong>
+                          момент: 
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/T=.png" alt="T="> 9554140.127 <img src="Pictures/png/Nmm.png" alt="Nmm">
+                        </p>
+                        <div class="accordion" id="accordion_T2_3">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading_T2_3">
+                              <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_T2_3" aria-expanded="true" aria-controls="collapse_T2_3">
+                                Т2.3 - Механичке карактеристике
+                              </button>
+                            </h2>
+                            <div id="collapse_T2_3" class="accordion-collapse collapse" aria-labelledby="heading_T2_3" data-bs-parent="#accordion_T2_3">
+                              <div class="accordion-body">
+                                <img src="Pictures/T2_3.jpg" width="100%" alt="T2.3">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <p>
+                          За материјал вратила <strong>Č.0745</strong> из Т 2.3 М.Е.I усвајамо <strong>трајну динамичку чврстоћу</strong> на једносмерну промену напона за случај увијања:
+                        </p>
+                        <p>
+                          <img src="Pictures/png/tau_D0=.png" alt="&tau;(D0)="> 260 <img src="Pictures/png/N_mm2.png" alt="N/mm2">
+                        </p>
+                        <p>
+                          <strong>
+                            Напон 
+                          </strong>
+                          увијања мора бити <strong>мањи</strong> од <strong>дозвољеног</strong> напона.
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/napon_uvijanja.png" alt="&tau;&le;&tau;d">
+                        </p>
+                        <p>
+                          <strong>
+                            Дозвољени напон увијања: 
+                          </strong>
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/tau_ud=.png" alt="&tau;ud="> 86.667 <img src="Pictures/png/N_mm2.png" alt="N/mm2">
+                        </p>
+                        <p>
+                          <strong>
+                            Степен сигурности 
+                          </strong>
+                          усвајамо из T2.5: 
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/s_solo=.png" alt="S="> 3
+                        </p>
+                        <div class="accordion" id="accordion_T2_5">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading_T2_5">
+                              <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_T2_5" aria-expanded="true" aria-controls="collapse_T2_5">
+                                Т2.5 - Степен сигурности
+                              </button>
+                            </h2>
+                            <div id="collapse_T2_5" class="accordion-collapse collapse" aria-labelledby="heading_T2_5" data-bs-parent="#accordion_T2_5">
+                              <div class="accordion-body">
+                                <img src="Pictures/T2_5.jpg" width="100%" alt="T2.5">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <p>
+                          <strong>
+                            Називни 
+                          </strong>
+                          пречник вратила:
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/di=.png" alt="di="> 88.867 <img src="Pictures/png/mm.png" alt="mm">
+                        </p>
+                        <p>
+                          <strong>
+                            на израчунати 
+                          </strong>
+                          пречник вратила <strong>додаје</strong> се дубина жљеба за клин и стандардизује се пречник вратила:
+                        </p>
+                        <p>
+                          <strong>
+                            израчунатом 
+                          </strong>
+                          пречнику вратила: 88.867 <img src="Pictures/png/mm.png" alt="mm"> одговара дубина жлеба за клин:
+                        </p>
+                        <p>
+                          <img src="Pictures/png/t_klin=.png" alt="t="> 8.5 <img src="Pictures/png/mm.png" alt="mm">, те добијамо потребан пречник вратила:
+                        </p>
+                        <div class="accordion" id="accordion_T4_7x1">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading_T4_7x1">
+                              <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_T4_7x1" aria-expanded="true" aria-controls="collapse_T4_7x1">
+                                Т4.7
+                              </button>
+                            </h2>
+                            <div id="collapse_T4_7x1" class="accordion-collapse collapse" aria-labelledby="heading_T4_7x1" data-bs-parent="#accordion_T4_7x1">
+                              <div class="accordion-body">
+                                <img src="Pictures/T4_7.jpg" width="100%" alt="Табела 4.7">
+                                <p>
+                                  Стандардне дужине клинова: 20, 25, 28, 32, 36, 40, 45, 50, 56, 63, 70, 80, 90, 100, 110, 125, 140, 180, 200, ... , 400, а за нормалне клинове и још: 5, 8, 10, 12, 15, 16, 18.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <p>
+                          <img src="Pictures/png/d_vratila=.png" alt="d="> 97.367 <img src="Pictures/png/mm.png" alt="mm">
+                        </p>
+                        <p>
+                          <strong>
+                            како се из T 0.1 усвајају 
+                          </strong>
+                          вредности за ред R5, R10, R20, R40, па тек на крају подешени бројеви, то се усваја:
+                        </p>
+                        <p>
+                          <strong>
+                            пречник погонског вратила: 
+                          </strong>
+                          <img src="Pictures/png/d_malo=.png" alt="d="> 100 <img src="Pictures/png/mm.png" alt="mm">
+                        </p>
+                        <div class="accordion" id="accordion_T0_1">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="Standardni_brojevi">
+                              <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_Standardni_brojevi" aria-expanded="true" aria-controls="collapse_Standardni_brojevi">
+                                Стандардни бројеви:
+                              </button>
+                            </h2>
+                            <div id="collapse_Standardni_brojevi" class="accordion-collapse collapse" aria-labelledby="Standardni_brojevi" data-bs-parent="#accordion_T0_1">
+                              <div class="accordion-body">
+                                <img src="Pictures/Standardni_brojevi.jpg" width="100%" alt="Стандардни бројеви">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <p>
+                          <strong>
+                            T 4.7 M.E.II 
+                          </strong>називном пречнику од <img src="Pictures/png/d_malo=.png" alt="d="> 100 <img src="Pictures/png/mm.png" alt="mm"> одговара клин:
+                        </p>
+                        <p>
+                          <img src="Pictures/png/b=.png" alt="b="> 28 <img src="Pictures/png/mm.png" alt="mm">
+                        </p>
+                        <p>
+                          <img src="Pictures/png/h=.png" alt="h="> 16 <img src="Pictures/png/mm.png" alt="mm">
+                        </p>
+                        <p>
+                          <img src="Pictures/png/t_klin=.png" alt="t="> 9.9 <img src="Pictures/png/mm.png" alt="mm">
+                        </p>
+                        <p>
+                          <img src="Pictures/png/r=.png" alt="r="> 0.8 <img src="Pictures/png/mm.png" alt="mm">
+                        </p>
+                        <p>
+                          <strong>
+                            провера исправности усвојеног клина: 
+                          </strong>
+                        </p>
+                        <p>
+                          <img src="Pictures/png/d_t=.png" alt="d-t="> 90.1 <img src="Pictures/png/mm.png" alt="mm"> > <img src="Pictures/png/di_solo=.png" alt="di="> 88.867 <img src="Pictures/png/mm.png" alt="mm">
+                        </p>
+                        <h3>Гоњено вратило</h3>
+                        <p>
+                          <strong>
+                            Степен 
+                          </strong>
+                          искоришћења се рачуна по обрасцу:
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/eta_obrazac.png" alt="&eta;">
+                        </p>
+                        <p>
+                          <strong>
+                            Степен 
+                          </strong>
+                          искоришћења за ланчане парове се креће у границама:
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/eta=.png" alt="&eta;="> 0.98 ... 0.99
+                        </p>
+                        <p class="left_padding">
+                          усвајам: <img src="Pictures/png/eta=.png" alt="&eta;="> 0.99
+                        </p>
+                        <p>
+                          <strong>
+                            Преносни 
+                          </strong>
+                          однос: 
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/i=.png" alt="i="> 2 
+                        </p>
+                        <p>
+                          <strong>
+                            Обртни 
+                          </strong>
+                          момент на погонском вратилу: 
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/T1=.png" alt="T="> 9554140.127 <img src="Pictures/png/Nmm.png" alt="Nmm">
+                        </p>
+                        <p>
+                          <strong>
+                            Обртни 
+                          </strong>
+                          момент на гоњеном вратилу износи: 
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/T2=.png" alt="T2="> 18917197.45 <img src="Pictures/png/Nmm.png" alt="Nmm">
+                        </p>
+                        <p>
+                          <strong>
+                            Напон 
+                          </strong>
+                          увијања мора бити <strong>мањи</strong> од <strong>дозвољеног</strong> напона.
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/napon_uvijanja_II.png" alt="&tau;&le;&tau;d">
+                        </p>
+                        <p>
+                          <strong>
+                            Називни 
+                          </strong>
+                          пречник вратила:
+                        </p>
+                        <p class="left_padding">
+                          <img src="Pictures/png/di_II=.png" alt="di="> 111.591 <img src="Pictures/png/mm.png" alt="mm">
+                        </p>
+                        <p>
+                          <strong>
+                            како се из T 0.1 усвајају 
+                          </strong>
+                          вредности за ред R5, R10, R20, R40, па тек на крају подешени бројеви, то се усваја:
+                        </p>
+                        <p>
+                          <strong>
+                            пречник гоњеног вратила: 
+                          </strong>
+                          <img src="Pictures/png/d_malo=.png" alt="d="> 160 <img src="Pictures/png/mm.png" alt="mm">
+                        </p>
+                        <div class="accordion" id="accordion_T0_1x1">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="Standardni_brojevix1">
+                              <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_Standardni_brojevix1" aria-expanded="true" aria-controls="collapse_Standardni_brojevix1">
+                                Стандардни бројеви:
+                              </button>
+                            </h2>
+                            <div id="collapse_Standardni_brojevix1" class="accordion-collapse collapse" aria-labelledby="Standardni_brojevix1" data-bs-parent="#accordion_T0_1x1">
+                              <div class="accordion-body">
+                                <img src="Pictures/Standardni_brojevi.jpg" width="100%" alt="Стандардни бројеви">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <p>
+                          <strong>
+                            T 4.7 M.E.II 
+                          </strong>називном пречнику од <img src="Pictures/png/d_malo=.png" alt="d="> 160 <img src="Pictures/png/mm.png" alt="mm"> одговара клин:
+                        </p>
+                        <p>
+                          <img src="Pictures/png/b=.png" alt="b="> 40 <img src="Pictures/png/mm.png" alt="mm">
+                        </p>
+                        <p>
+                          <img src="Pictures/png/h=.png" alt="h="> 22 <img src="Pictures/png/mm.png" alt="mm">
+                        </p>
+                        <p>
+                          <img src="Pictures/png/t_klin=.png" alt="t="> 13.5 <img src="Pictures/png/mm.png" alt="mm">
+                        </p>
+                        <p>
+                          <img src="Pictures/png/r=.png" alt="r="> 1 <img src="Pictures/png/mm.png" alt="mm">
+                        </p>
+                        <div class="accordion" id="accordion_T4_7x2">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading_T4_7x2">
+                              <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_T4_7x2" aria-expanded="true" aria-controls="collapse_T4_7x2">
+                                Т4.7
+                              </button>
+                            </h2>
+                            <div id="collapse_T4_7x2" class="accordion-collapse collapse" aria-labelledby="heading_T4_7x2" data-bs-parent="#accordion_T4_7x2">
+                              <div class="accordion-body">
+                                <img src="Pictures/T4_7.jpg" width="100%" alt="Табела 4.7">
+                                <p>
+                                  Стандардне дужине клинова: 20, 25, 28, 32, 36, 40, 45, 50, 56, 63, 70, 80, 90, 100, 110, 125, 140, 180, 200, ... , 400, а за нормалне клинове и још: 5, 8, 10, 12, 15, 16, 18.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <p>
+                          <strong>
+                            провера исправности усвојеног клина: 
+                          </strong>
+                        </p>
+                        <p>
+                          <img src="Pictures/png/d_t=.png" alt="d-t="> 146.5 <img src="Pictures/png/mm.png" alt="mm"> > <img src="Pictures/png/di_solo=.png" alt="di="> 111.591 <img src="Pictures/png/mm.png" alt="mm">
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="konstrukcione_velicine">
+                      <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_konstrukcione_velicine" aria-expanded="true" aria-controls="collapse_konstrukcione_velicine">
+                        Конструкционе величине ланчаника:
+                      </button>
+                    </h2>
+                    <div id="collapse_konstrukcione_velicine" class="accordion-collapse collapse" aria-labelledby="konstrukcione_velicine" data-bs-parent="#proracun_lancanog_para">
+                      <div class="accordion-body">
+                        <ul class="nav nav-tabs" id="konst_vel_lancanika" role="tablist">
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="konst_vel_p_l-tab" data-bs-toggle="tab" data-bs-target="#konst_vel_p_l" type="button" role="tab" aria-controls="konst_vel_p_l" aria-selected="true">Погонски ланчаник</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="konst_vel_g_l-tab" data-bs-toggle="tab" data-bs-target="#konst_vel_g_l" type="button" role="tab" aria-controls="konst_vel_g_l" aria-selected="true">Гоњени ланчаник</button>
+                          </li>
+                        </ul>
+                        <div class="tab-content" id="konst_vel_lancanika_TabContent">
+                          <div class="tab-pane show active" id="konst_vel_p_l" role="tabpanel" aria-labelledby="konst_vel_p_l-tab">
+                            <p>
+                              <strong>
+                                Корак 
+                              </strong>
+                              ланца: 
+                            </p>
+                            <p class="left_padding">
+                              <img src="Pictures/png/p_korak=.png" alt="p="> 63.5 <img src="Pictures/png/mm.png" alt="mm">
+                            </p>
+                            <p>
+                              <strong>
+                                Број 
+                              </strong>
+                              зубаца погонског ланчаника:
+                            </p>
+                            <p class="left_padding">
+                              <img src="Pictures/png/z_malo=.png" alt="z="> 17
+                            </p>
+                            <div class="accordion" id="accordion_T4_9x3">
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading_T4_9x3">
+                                  <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_T4_9x3" aria-expanded="true" aria-controls="collapse_T4_9x3">
+                                    Т 4.9 - Мере ланаца са ваљцима
+                                  </button>
+                                </h2>
+                                <div id="collapse_T4_9x3" class="accordion-collapse collapse" aria-labelledby="heading_T4_9x3" data-bs-parent="#accordion_T4_9x3">
+                                  <div class="accordion-body">
+                                    <img src="Pictures/T4_9.jpg" width="100%" alt="T 4.9">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <p>
+                              <strong>
+                                Према обрасцима 
+                              </strong>
+                              из табеле Т 4.9 могу да се одреде следеће величине:
+                            </p>
+                            <p class="left_padding">
+                              <img src="Pictures/png/k_max=.png" alt="kmax="> 22.991 <img src="Pictures/png/mm.png" alt="mm">
+                            </p>
+                            <p class="left_padding">
+                              <img src="Pictures/png/k_min=.png" alt="kmin="> 12.065 <img src="Pictures/png/mm.png" alt="mm">
+                            </p>
+                            <p class="left_padding">
+                              <img src="Pictures/png/d1_solo=.png" alt="d1="> 39.37 <img src="Pictures/png/mm.png" alt="mm"> - Т 4.9
+                            </p>
+                            <p>
+                              <strong>
+                                Минимално 
+                              </strong>
+                              међузубље:
+                            </p>
+                            <p class="left_padding">
+                              <img src="Pictures/png/r1min=.png" alt="r1min="> 19.882 <img src="Pictures/png/mm.png" alt="mm">
+                            </p>
+                            <p class="left_padding">
+                              <img src="Pictures/png/r2min=.png" alt="r2min="> 89.764 <img src="Pictures/png/mm.png" alt="mm">
+                            </p>
+                            <p class="left_padding">
+                              <img src="Pictures/png/kapamin=.png" alt="&kappa;min="> 134.706 &deg;
+                            </p>
+                            <p>
+                              <strong>
+                                Максимално 
+                              </strong>
+                              међузубље:
+                            </p>
+                            <p class="left_padding">
+                              <img src="Pictures/png/r1max=.png" alt="r1max="> 20.315 <img src="Pictures/png/mm.png" alt="mm">
+                            </p>
+                            <p class="left_padding">
+                              <img src="Pictures/png/r2max=.png" alt="r2max="> 147.716 <img src="Pictures/png/mm.png" alt="mm">
+                            </p>
+                            <p class="left_padding">
+                              <img src="Pictures/png/kapamax=.png" alt="&kappa;max="> 114.706 &deg;
+                            </p>
+                            <p class="left_padding">
+                              <strong>
+                                усвајам
+                              </strong>
+                              : <img src="Pictures/png/r1=.png" alt="r1="> 20 <img src="Pictures/png/mm.png" alt="mm">, <img src="Pictures/png/r2=.png" alt="r2="> 100 <img src="Pictures/png/mm.png" alt="mm"> и <img src="Pictures/png/kapa=.png" alt="&kappa;"> 120 &deg;
+                            </p>
+                            <p>
+                              <strong>
+                                Троредни 
+                              </strong>
+                              ланац:
+                            </p>
+                            <p class="left_padding">
+                              <strong>за </strong>
+                              <img src="Pictures/png/p_12_7.png" alt="p>12.7">
+                              рачунамо: 
+                            </p>
+                            <p class="left_padding">
+                              <img src="Pictures/png/b_lanca=.png" alt="b="> 35.433 <img src="Pictures/png/mm.png" alt="mm">
+                            </p>
+                            <p class="left_padding">
+                              <img src="Pictures/png/b1=.png" alt="b1="> 38.1 <img src="Pictures/png/mm.png" alt="mm"> - Т 4.9
+                            </p>
+                            <p class="left_padding">
+                              <img src="Pictures/png/r3=.png" alt="r3&ge;p="> 63.5 <img src="Pictures/png/mm.png" alt="mm">
+                            </p>
+                            <p class="left_padding">
+                              <strong>
+                                усвајам
+                              </strong>
+                              : <img src="Pictures/png/r3_solo=.png" alt="r3="> 100 <img src="Pictures/png/mm.png" alt="mm">
+                            </p>
+                            <p class="left_padding">
+                              <strong>за </strong>
+                              <img src="Pictures/png/p_38_1.png" alt="p>38.1">
+                              рачунамо:  <img src="Pictures/png/r4.png" alt="r4">
+                            </p>
+                            <p class="left_padding">
+                              <strong>
+                                усвајам
+                              </strong>
+                              : <img src="Pictures/png/r4=.png" alt="r4="> 2 <img src="Pictures/png/mm.png" alt="mm">
+                            </p>
+                            <p class="left_padding">
+                              <img src="Pictures/png/e=.png" alt="e="> 72.29 <img src="Pictures/png/mm.png" alt="mm"> - Т 4.9
+                            </p>
+                            <p class="left_padding">
+                              <img src="Pictures/png/c=.png" alt="c="> 6.35 <img src="Pictures/png/mm.png" alt="mm">
+                            </p>
+                            <p>
+                              <strong>
+                                Пречник 
+                              </strong>
+                              подеоне кружнице:
+                            </p>
+                            <p class="left_padding">
+                              <img src="Pictures/png/d=.png" alt="d="> 345.579 <img src="Pictures/png/mm.png" alt="mm">
+                            </p>
+                            <p class="left_padding">
+                              <img src="Pictures/png/tau_2=.png" alt="&tau;/2="> 10.588 &deg;
+                            </p>
+                            <p>
+                              <strong>
+                                Пречник 
+                              </strong>
+                              подножне кружнице:
+                            </p>
+                            <p class="left_padding">
+                              <img src="Pictures/png/df=.png" alt="df="> 306.209 <img src="Pictures/png/mm.png" alt="mm">
+                            </p>
+                            <p>
+                              <strong>
+                                Пречник 
+                              </strong>
+                              темене кружнице:
+                            </p>
+                            <p class="left_padding">
+                              <img src="Pictures/png/damax=.png" alt="damax="> 385.584 <img src="Pictures/png/mm.png" alt="mm">
+                            </p>
+                            <p class="left_padding">
+                              <img src="Pictures/png/damin=.png" alt="damin="> 363.733 <img src="Pictures/png/mm.png" alt="mm">
+                            </p>
+                            <p class="left_padding">
+                              <strong>
+                                усвајам
+                              </strong>
+                              : <img src="Pictures/png/da=.png" alt="da="> 375 <img src="Pictures/png/mm.png" alt="mm">
+                            </p>
+                            <p>
+                              <strong>
+                                Пречник 
+                              </strong>
+                              венца ланчаника:
+                            </p>
+                            <p class="left_padding">
+                              <img src="Pictures/png/ds=.png" alt="ds="> 271.695 <img src="Pictures/png/mm.png" alt="mm">
+                            </p>
+                            <p class="left_padding">
+                              <img src="Pictures/png/g1=.png" alt="g1="> 60 <img src="Pictures/png/mm.png" alt="mm"> - Т 4.9
+                            </p>
+                          </div>
+                          <div class="tab-pane" id="konst_vel_g_l" role="tabpanel" aria-labelledby="konst_vel_g_l-tab">
+                            <p>
+                              <strong>
+                                Корак 
+                              </strong>
+                              ланца: 
+                            </p>
+                            <p class="left_padding">
+                              <img src="Pictures/png/p_korak=.png" alt="p="> 63.5 <img src="Pictures/png/mm.png" alt="mm">
+                            </p>
+                            <p>
+                              <strong>
+                                Број 
+                              </strong>
+                              зубаца погонског ланчаника:
+                            </p>
+                            <p class="left_padding">
+                              <img src="Pictures/png/z_malo=.png" alt="z="> 34
+                            </p>
+                            <div class="accordion" id="accordion_T4_9x4">
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading_T4_9x4">
+                                  <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_T4_9x4" aria-expanded="true" aria-controls="collapse_T4_9x4">
+                                    Т 4.9 - Мере ланаца са ваљцима
+                                  </button>
+                                </h2>
+                                <div id="collapse_T4_9x4" class="accordion-collapse collapse" aria-labelledby="heading_T4_9x4" data-bs-parent="#accordion_T4_9x4">
+                                  <div class="accordion-body">
+                                    <img src="Pictures/T4_9.jpg" width="100%" alt="T 4.9">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <p>
+                              <strong>
+                                Према обрасцима 
+                              </strong>
+                              из табеле Т 4.9 могу да се одреде следеће величине:
+                            </p>
+                            <p class="left_padding">
+                              <img src="Pictures/png/k_max=.png" alt="kmax="> 21.497 <img src="Pictures/png/mm.png" alt="mm">
+                            </p>
+                            <p class="left_padding">
+                              <img src="Pictures/png/k_min=.png" alt="kmin="> 12.065 <img src="Pictures/png/mm.png" alt="mm">
+                            </p>
+                            <p class="left_padding">
+                              <img src="Pictures/png/d1_solo=.png" alt="d1="> 39.37 <img src="Pictures/png/mm.png" alt="mm"> - Т 4.9
+                            </p>
+                            <p>
+                              <strong>
+                                Минимално 
+                              </strong>
+                              међузубље:
+                            </p>
+                            <p class="left_padding">
+                              <img src="Pictures/png/r1min=.png" alt="r1min="> 19.882 <img src="Pictures/png/mm.png" alt="mm">
+                            </p>
+                            <p class="left_padding">
+                              <img src="Pictures/png/r2min=.png" alt="r2min="> 170.078 <img src="Pictures/png/mm.png" alt="mm">
+                            </p>
+                            <p class="left_padding">
+                              <img src="Pictures/png/kapamin=.png" alt="&kappa;min="> 137.353 &deg;
+                            </p>
+                            <p>
+                              <strong>
+                                Максимално 
+                              </strong>
+                              међузубље:
+                            </p>
+                            <p class="left_padding">
+                              <img src="Pictures/png/r1max=.png" alt="r1max="> 20.315 <img src="Pictures/png/mm.png" alt="mm">
+                            </p>
+                            <p class="left_padding">
+                              <img src="Pictures/png/r2max=.png" alt="r2max="> 420.787 <img src="Pictures/png/mm.png" alt="mm">
+                            </p>
+                            <p class="left_padding">
+                              <img src="Pictures/png/kapamax=.png" alt="&kappa;max="> 117.353 &deg;
+                            </p>
+                            <p class="left_padding">
+                              <strong>
+                                усвајам
+                              </strong>
+                              : <img src="Pictures/png/r1=.png" alt="r1="> 20 <img src="Pictures/png/mm.png" alt="mm">, <img src="Pictures/png/r2=.png" alt="r2="> 200 <img src="Pictures/png/mm.png" alt="mm"> и <img src="Pictures/png/kapa=.png" alt="&kappa;"> 130 &deg;
+                            </p>
+                            <p>
+                              <strong>
+                                Троредни 
+                              </strong>
+                              ланац:
+                            </p>
+                            <p class="left_padding">
+                              <strong>за </strong>
+                              <img src="Pictures/png/p_12_7.png" alt="p>12.7">
+                              рачунамо: 
+                            </p>
+                            <p class="left_padding">
+                              <img src="Pictures/png/b_lanca=.png" alt="b="> 35.433 <img src="Pictures/png/mm.png" alt="mm">
+                            </p>
+                            <p class="left_padding">
+                              <img src="Pictures/png/b1=.png" alt="b1="> 38.1 <img src="Pictures/png/mm.png" alt="mm"> - Т 4.9
+                            </p>
+                            <p class="left_padding">
+                              <img src="Pictures/png/r3=.png" alt="r3&ge;p="> 63.5 <img src="Pictures/png/mm.png" alt="mm">
+                            </p>
+                            <p class="left_padding">
+                              <strong>
+                                усвајам
+                              </strong>
+                              : <img src="Pictures/png/r3_solo=.png" alt="r3="> 100 <img src="Pictures/png/mm.png" alt="mm">
+                            </p>
+                            <p class="left_padding">
+                              <strong>за </strong>
+                              <img src="Pictures/png/p_38_1.png" alt="p>38.1">
+                              рачунамо:  <img src="Pictures/png/r4.png" alt="r4">
+                            </p>
+                            <p class="left_padding">
+                              <strong>
+                                усвајам
+                              </strong>
+                              : <img src="Pictures/png/r4=.png" alt="r4="> 2 <img src="Pictures/png/mm.png" alt="mm">
+                            </p>
+                            <p class="left_padding">
+                              <img src="Pictures/png/e=.png" alt="e="> 72.29 <img src="Pictures/png/mm.png" alt="mm"> - Т 4.9
+                            </p>
+                            <p class="left_padding">
+                              <img src="Pictures/png/c=.png" alt="c="> 6.35 <img src="Pictures/png/mm.png" alt="mm">
+                            </p>
+                            <p>
+                              <strong>
+                                Пречник 
+                              </strong>
+                              подеоне кружнице:
+                            </p>
+                            <p class="left_padding">
+                              <img src="Pictures/png/d=.png" alt="d="> 688.210 <img src="Pictures/png/mm.png" alt="mm">
+                            </p>
+                            <p class="left_padding">
+                              <img src="Pictures/png/tau_2=.png" alt="&tau;/2="> 5.294 &deg;
+                            </p>
+                            <p>
+                              <strong>
+                                Пречник 
+                              </strong>
+                              подножне кружнице:
+                            </p>
+                            <p class="left_padding">
+                              <img src="Pictures/png/df=.png" alt="df="> 648.840 <img src="Pictures/png/mm.png" alt="mm">
+                            </p>
+                            <p>
+                              <strong>
+                                Пречник 
+                              </strong>
+                              темене кружнице:
+                            </p>
+                            <p class="left_padding">
+                              <img src="Pictures/png/damax=.png" alt="damax="> 728.215 <img src="Pictures/png/mm.png" alt="mm">
+                            </p>
+                            <p class="left_padding">
+                              <img src="Pictures/png/damin=.png" alt="damin="> 709.352 <img src="Pictures/png/mm.png" alt="mm">
+                            </p>
+                            <p class="left_padding">
+                              <strong>
+                                усвајам
+                              </strong>
+                              : <img src="Pictures/png/da=.png" alt="da="> 710 <img src="Pictures/png/mm.png" alt="mm">
+                            </p>
+                            <p>
+                              <strong>
+                                Пречник 
+                              </strong>
+                              венца ланчаника:
+                            </p>
+                            <p class="left_padding">
+                              <img src="Pictures/png/ds=.png" alt="ds="> 617.274 <img src="Pictures/png/mm.png" alt="mm">
+                            </p>
+                            <p class="left_padding">
+                              <img src="Pictures/png/g1=.png" alt="g1="> 60 <img src="Pictures/png/mm.png" alt="mm"> - Т 4.9
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="lancani_par_modeliranje" role="tabpanel" aria-labelledby="lancani_par_modeliranje-tab">
+                <div class="accordion" id="modeliranje_i_crtezi_lancanog_para">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="mod_pogonskog_lancanika">
+                      <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_mod_pogonskog_lancanika" aria-expanded="true" aria-controls="collapse_mod_pogonskog_lancanika">
+                        Моделирање и цртеж погонског ланчаника:
+                      </button>
+                    </h2>
+                    <div id="collapse_mod_pogonskog_lancanika" class="accordion-collapse collapse show" aria-labelledby="mod_pogonskog_lancanika" data-bs-parent="#modeliranje_i_crtezi_lancanog_para">
+                      <div class="accordion-body">
+                        <ul class="nav nav-tabs" id="pogonski_lancanik_Tab" role="tablist">
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pogonski_lancanik_crtez-tab" data-bs-toggle="tab" data-bs-target="#pogonski_lancanik_crtez" type="button" role="tab" aria-controls="pogonski_lancanik_crtez" aria-selected="true">Цртеж</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pogonski_lancanik_modeliranje-tab" data-bs-toggle="tab" data-bs-target="#pogonski_lancanik_modeliranje" type="button" role="tab" aria-controls="pogonski_lancanik_modeliranje" aria-selected="false">Моделирање</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="izrada_crteza_pogonskog_lancanika-tab" data-bs-toggle="tab" data-bs-target="#izrada_crteza_pogonskog_lancanika" type="button" role="tab" aria-controls="izrada_crteza_pogonskog_lancanika" aria-selected="false">Израда цртежа</button>
+                          </li>
+                        </ul>
+                        <div class="tab-content" id="pogonski_lancanik_TabContent">
+                          <div class="tab-pane show active" id="pogonski_lancanik_crtez" role="tabpanel" aria-labelledby="pogonski_lancanik_crtez-tab">
+                            <img src="Pictures/Crtezi/Pogonski_lancanik_2021.jpg" width="100%" alt="Цртеж погонског ланчаника">
+                          </div>
+                          <div class="tab-pane" id="pogonski_lancanik_modeliranje" role="tabpanel" aria-labelledby="pogonski_lancanik_modeliranje-tab">
+                            <div class="card ratio ratio-16x9">
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/ZmeeF4lMeuk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                          </div>
+                          <div class="tab-pane" id="izrada_crteza_pogonskog_lancanika" role="tabpanel" aria-labelledby="izrada_crteza_pogonskog_lancanika-tab">
+                            <div class="card ratio ratio-16x9">
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/D4cZGFdrNhk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="mod_gonjenog_lancanika">
+                      <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_mod_gonjenog_lancanika" aria-expanded="true" aria-controls="collapse_mod_gonjenog_lancanika">
+                        Моделирање и цртеж гоњеног ланчаника:
+                      </button>
+                    </h2>
+                    <div id="collapse_mod_gonjenog_lancanika" class="accordion-collapse collapse" aria-labelledby="mod_gonjenog_lancanika" data-bs-parent="#modeliranje_i_crtezi_lancanog_para">
+                      <div class="accordion-body">
+                        <ul class="nav nav-tabs" id="gonjeni_lancanik_Tab" role="tablist">
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="gonjeni_lancanik_crtez-tab" data-bs-toggle="tab" data-bs-target="#gonjeni_lancanik_crtez" type="button" role="tab" aria-controls="gonjeni_lancanik_crtez" aria-selected="true">Цртеж</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="gonjeni_lancanik_modeliranje_i_crtez-tab" data-bs-toggle="tab" data-bs-target="#gonjeni_lancanik_modeliranje_i_crtez" type="button" role="tab" aria-controls="gonjeni_lancanik_modeliranje_i_crtez" aria-selected="false">Моделирање и израда цртежа</button>
+                          </li>
+                        </ul>
+                        <div class="tab-content" id="gonjeni_lancanik_TabContent">
+                          <div class="tab-pane show active" id="gonjeni_lancanik_crtez" role="tabpanel" aria-labelledby="gonjeni_lancanik_crtez-tab">
+                            <img src="Pictures/Crtezi/Gonjeni_lancanik_2021.jpg" width="100%" alt="Цртеж гоњеног ланчаника">
+                          </div>
+                          <div class="tab-pane" id="gonjeni_lancanik_modeliranje_i_crtez" role="tabpanel" aria-labelledby="gonjeni_lancanik_modeliranje_i_crtez-tab">
+                            <div class="card ratio ratio-16x9">
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/-sjVSp_u-LA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="mod_clanaka_trorednog_lanca">
+                      <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_mod_clanaka_trorednog_lanca" aria-expanded="true" aria-controls="collapse_mod_clanaka_trorednog_lanca">
+                        Моделирање чланака троредног ланца:
+                      </button>
+                    </h2>
+                    <div id="collapse_mod_clanaka_trorednog_lanca" class="accordion-collapse collapse" aria-labelledby="mod_clanaka_trorednog_lanca" data-bs-parent="#modeliranje_i_crtezi_lancanog_para">
+                      <div class="accordion-body">
+                        <ul class="nav nav-tabs" id="clanci_lanca_Tab" role="tablist">
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="modeliranje_clanaka_lanca-tab" data-bs-toggle="tab" data-bs-target="#modeliranje_clanaka_lanca" type="button" role="tab" aria-controls="modeliranje_clanaka_lanca" aria-selected="true">Моделирање чланака ланца</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="spoljasnji_clanci_lanca-tab" data-bs-toggle="tab" data-bs-target="#spoljasnji_clanci_lanca" type="button" role="tab" aria-controls="spoljasnji_clanci_lanca" aria-selected="false">Спољашњи чланци - подсетник</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="unutrasnji_clanci-tab" data-bs-toggle="tab" data-bs-target="#unutrasnji_clanci" type="button" role="tab" aria-controls="unutrasnji_clanci" aria-selected="false">Унутрашњи чланци - подсетник</button>
+                          </li>
+                        </ul>
+                        <div class="tab-content" id="clanci_lanca_TabContent">
+                          <div class="tab-pane show active" id="modeliranje_clanaka_lanca" role="tabpanel" aria-labelledby="modeliranje_clanaka_lanca-tab">
+                            <div class="card ratio ratio-16x9">
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/tiVd45UU64o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                          </div>
+                          <div class="tab-pane" id="spoljasnji_clanci_lanca" role="tabpanel" aria-labelledby="spoljasnji_clanci_lanca-tab">
+                            <div id="carousel_spoljasnji_clanak_lanca" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                              <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carousel_spoljasnji_clanak_lanca" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carousel_spoljasnji_clanak_lanca" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carousel_spoljasnji_clanak_lanca" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carousel_spoljasnji_clanak_lanca" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carousel_spoljasnji_clanak_lanca" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                <button type="button" data-bs-target="#carousel_spoljasnji_clanak_lanca" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                <button type="button" data-bs-target="#carousel_spoljasnji_clanak_lanca" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                                <button type="button" data-bs-target="#carousel_spoljasnji_clanak_lanca" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                                <button type="button" data-bs-target="#carousel_spoljasnji_clanak_lanca" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                                <button type="button" data-bs-target="#carousel_spoljasnji_clanak_lanca" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                              </div>
+                              <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                  <img src="Pictures/Carousel/sp_clanak_1.jpg" class="d-block w-100" alt="Осовиница">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="Pictures/Carousel/sp_clanak_2.jpg" class="d-block w-100" alt="Спољашња ламела">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="Pictures/Carousel/sp_clanak_3.jpg" class="d-block w-100" alt="Спољашња ламела отвори">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="Pictures/Carousel/sp_clanak_4.jpg" class="d-block w-100" alt="Спољашњи чланак ланца">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="Pictures/Carousel/sp_clanak_5.jpg" class="d-block w-100" alt="Средња раван">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="Pictures/Carousel/sp_clanak_6.jpg" class="d-block w-100" alt="Оса">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="Pictures/Carousel/sp_clanak_7.jpg" class="d-block w-100" alt="Раван">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="Pictures/Carousel/sp_clanak_8.jpg" class="d-block w-100" alt="Троредни спољашњи чланак ланца">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="Pictures/Carousel/sp_clanak_9.jpg" class="d-block w-100" alt="Средња раван">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="Pictures/Carousel/sp_clanak_10.jpg" class="d-block w-100" alt="Склоп троредног спољашњег чланка ланца">
+                                </div>
+                              </div>
+                              <button class="carousel-control-prev" type="button" data-bs-target="#carousel_spoljasnji_clanak_lanca" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#carousel_spoljasnji_clanak_lanca" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                              </button>
+                            </div>
+                          </div>
+                          <div class="tab-pane" id="unutrasnji_clanci" role="tabpanel" aria-labelledby="unutrasnji_clanci-tab">
+                            <div id="carousel_unutrasnji_clanak_lanca" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                              <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carousel_unutrasnji_clanak_lanca" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carousel_unutrasnji_clanak_lanca" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carousel_unutrasnji_clanak_lanca" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carousel_unutrasnji_clanak_lanca" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carousel_unutrasnji_clanak_lanca" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                <button type="button" data-bs-target="#carousel_unutrasnji_clanak_lanca" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                <button type="button" data-bs-target="#carousel_unutrasnji_clanak_lanca" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                                <button type="button" data-bs-target="#carousel_unutrasnji_clanak_lanca" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                                <button type="button" data-bs-target="#carousel_unutrasnji_clanak_lanca" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                                <button type="button" data-bs-target="#carousel_unutrasnji_clanak_lanca" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                                <button type="button" data-bs-target="#carousel_unutrasnji_clanak_lanca" data-bs-slide-to="10" aria-label="Slide 11"></button>
+                                <button type="button" data-bs-target="#carousel_unutrasnji_clanak_lanca" data-bs-slide-to="11" aria-label="Slide 12"></button>
+                              </div>
+                              <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                  <img src="Pictures/Carousel/un_clanak_1.jpg" class="d-block w-100" alt="Непокретни ваљак - профил">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="Pictures/Carousel/un_clanak_2.jpg" class="d-block w-100" alt="Непокретни ваљак - дебљина зида">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="Pictures/Carousel/un_clanak_3.jpg" class="d-block w-100" alt="Непокретни ваљак">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="Pictures/Carousel/un_clanak_4.jpg" class="d-block w-100" alt="Обртни ваљак - профил">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="Pictures/Carousel/un_clanak_5.jpg" class="d-block w-100" alt="Обртни ваљак - дебљина зида">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="Pictures/Carousel/un_clanak_6.jpg" class="d-block w-100" alt="Обртни ваљак">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="Pictures/Carousel/un_clanak_7.jpg" class="d-block w-100" alt="Унутрања ламела - профил">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="Pictures/Carousel/un_clanak_8.jpg" class="d-block w-100" alt="Унутрања ламела - отвори">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="Pictures/Carousel/un_clanak_9.jpg" class="d-block w-100" alt="Унутрашња ламела">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="Pictures/Carousel/un_clanak_10.jpg" class="d-block w-100" alt="Унутрашњи чланак ланца">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="Pictures/Carousel/un_clanak_11.jpg" class="d-block w-100" alt="Троредни унутрашњи чланак ланца - склапање">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="Pictures/Carousel/un_clanak_12.jpg" class="d-block w-100" alt="Склоп троредног унутрашњег чланка ланца">
+                                </div>
+                              </div>
+                              <button class="carousel-control-prev" type="button" data-bs-target="#carousel_unutrasnji_clanak_lanca" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#carousel_unutrasnji_clanak_lanca" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="mod_sklopa">
+                      <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_mod_sklopa" aria-expanded="true" aria-controls="collapse_mod_sklopa">
+                        Моделирање склопа:
+                      </button>
+                    </h2>
+                    <div id="collapse_mod_sklopa" class="accordion-collapse collapse" aria-labelledby="mod_sklopa" data-bs-parent="#modeliranje_i_crtezi_lancanog_para">
+                      <div class="accordion-body">
+                        <ul class="nav nav-tabs" id="clanci_lanca_Tab" role="tablist">
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="modeliranje_sklopa-tab" data-bs-toggle="tab" data-bs-target="#modeliranje_sklopa" type="button" role="tab" aria-controls="modeliranje_sklopa" aria-selected="true">Моделирање склопа</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="sklop_lancanog_para-tab" data-bs-toggle="tab" data-bs-target="#sklop_lancanog_para" type="button" role="tab" aria-controls="sklop_lancanog_para" aria-selected="false">Ланчани пар - подсетник</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="lanac_lancanog_para-tab" data-bs-toggle="tab" data-bs-target="#lanac_lancanog_para" type="button" role="tab" aria-controls="lanac_lancanog_para" aria-selected="false">Троредни ланац - подсетник</button>
+                          </li>
+                        </ul>
+                        <div class="tab-content" id="clanci_lanca_TabContent">
+                          <div class="tab-pane show active" id="modeliranje_sklopa" role="tabpanel" aria-labelledby="modeliranje_sklopa-tab">
+                            <div class="card ratio ratio-16x9">
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/uuNLDUDf9ok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                          </div>
+                          <div class="tab-pane" id="sklop_lancanog_para" role="tabpanel" aria-labelledby="sklop_lancanog_para-tab">
+                            <div id="carousel_lancani_par" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                              <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carousel_lancani_par" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carousel_lancani_par" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carousel_lancani_par" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carousel_lancani_par" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carousel_lancani_par" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                <button type="button" data-bs-target="#carousel_lancani_par" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                <button type="button" data-bs-target="#carousel_lancani_par" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                                <button type="button" data-bs-target="#carousel_lancani_par" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                                <button type="button" data-bs-target="#carousel_lancani_par" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                                <button type="button" data-bs-target="#carousel_lancani_par" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                                <button type="button" data-bs-target="#carousel_lancani_par" data-bs-slide-to="10" aria-label="Slide 11"></button>
+                                <button type="button" data-bs-target="#carousel_lancani_par" data-bs-slide-to="11" aria-label="Slide 12"></button>
+                                <button type="button" data-bs-target="#carousel_lancani_par" data-bs-slide-to="12" aria-label="Slide 13"></button>
+                                <button type="button" data-bs-target="#carousel_lancani_par" data-bs-slide-to="13" aria-label="Slide 14"></button>
+                                <button type="button" data-bs-target="#carousel_lancani_par" data-bs-slide-to="14" aria-label="Slide 15"></button>
+                                <button type="button" data-bs-target="#carousel_lancani_par" data-bs-slide-to="15" aria-label="Slide 16"></button>
+                              </div>
+                              <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                  <img src="Pictures/Carousel/lancani_par_1.jpg" class="d-block w-100" alt="Материјал погонског ланчаника">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="Pictures/Carousel/lancani_par_2.jpg" class="d-block w-100" alt="Материјал гоњеног ланчаника">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="Pictures/Carousel/lancani_par_3.jpg" class="d-block w-100" alt="Убацивање ланчаника у склоп">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="Pictures/Carousel/lancani_par_4.jpg" class="d-block w-100" alt="Float">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="Pictures/Carousel/lancani_par_5.jpg" class="d-block w-100" alt="Центрирање погонског ланчаника">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="Pictures/Carousel/lancani_par_6.jpg" class="d-block w-100" alt="Центрирање гоњеног ланчаника">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="Pictures/Carousel/lancani_par_7.jpg" class="d-block w-100" alt="Центрирање осе погонског ланчаника">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="Pictures/Carousel/lancani_par_8.jpg" class="d-block w-100" alt="Центрирање осе гоњеног ланчаника">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="Pictures/Carousel/lancani_par_9.jpg" class="d-block w-100" alt="Осно растојање">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="Pictures/Carousel/lancani_par_10.jpg" class="d-block w-100" alt="Снимање склопа">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="Pictures/Carousel/lancani_par_11.jpg" class="d-block w-100" alt="SW Motion">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="Pictures/Carousel/lancani_par_12.jpg" class="d-block w-100" alt="Belt Chain">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="Pictures/Carousel/lancani_par_13.jpg" class="d-block w-100" alt="Обртање ланчаника">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="Pictures/Carousel/lancani_par_14.jpg" class="d-block w-100" alt="Motion Analysis">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="Pictures/Carousel/lancani_par_15.jpg" class="d-block w-100" alt="Вучни крак ланца">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="Pictures/Carousel/lancani_par_16.jpg" class="d-block w-100" alt="Додавање мотора">
+                                </div>
+                              </div>
+                              <button class="carousel-control-prev" type="button" data-bs-target="#carousel_lancani_par" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#carousel_lancani_par" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                              </button>
+                            </div>
+                          </div>
+                          <div class="tab-pane" id="lanac_lancanog_para" role="tabpanel" aria-labelledby="lanac_lancanog_para-tab">
+                            <div id="carousel_lanac_lancanog_para" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                              <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carousel_lanac_lancanog_para" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carousel_lanac_lancanog_para" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carousel_lanac_lancanog_para" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carousel_lanac_lancanog_para" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carousel_lanac_lancanog_para" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                <button type="button" data-bs-target="#carousel_lanac_lancanog_para" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                <button type="button" data-bs-target="#carousel_lanac_lancanog_para" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                                <button type="button" data-bs-target="#carousel_lanac_lancanog_para" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                                <button type="button" data-bs-target="#carousel_lanac_lancanog_para" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                                <button type="button" data-bs-target="#carousel_lanac_lancanog_para" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                                <button type="button" data-bs-target="#carousel_lanac_lancanog_para" data-bs-slide-to="10" aria-label="Slide 11"></button>
+                                <button type="button" data-bs-target="#carousel_lanac_lancanog_para" data-bs-slide-to="11" aria-label="Slide 12"></button>
+                                <button type="button" data-bs-target="#carousel_lanac_lancanog_para" data-bs-slide-to="12" aria-label="Slide 13"></button>
+                                <button type="button" data-bs-target="#carousel_lanac_lancanog_para" data-bs-slide-to="13" aria-label="Slide 14"></button>
+                                <button type="button" data-bs-target="#carousel_lanac_lancanog_para" data-bs-slide-to="14" aria-label="Slide 15"></button>
+                                <button type="button" data-bs-target="#carousel_lanac_lancanog_para" data-bs-slide-to="15" aria-label="Slide 16"></button>
+                                <button type="button" data-bs-target="#carousel_lanac_lancanog_para" data-bs-slide-to="16" aria-label="Slide 17"></button>
+                                <button type="button" data-bs-target="#carousel_lanac_lancanog_para" data-bs-slide-to="17" aria-label="Slide 18"></button>
+                                <button type="button" data-bs-target="#carousel_lanac_lancanog_para" data-bs-slide-to="18" aria-label="Slide 19"></button>
+                              </div>
+                              <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                  <img src="Pictures/Carousel/lanac_1.jpg" class="d-block w-100" alt="Унутрашњи чланак ланца у склопу">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="Pictures/Carousel/lanac_2.jpg" class="d-block w-100" alt="Chain Component Pattern">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="Pictures/Carousel/lanac_3.jpg" class="d-block w-100" alt="Chain Pattern">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="Pictures/Carousel/lanac_4.jpg" class="d-block w-100" alt="Повезивање чланака ланца">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="Pictures/Carousel/lanac_5.jpg" class="d-block w-100" alt="Чланци ланца се повезују">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="Pictures/Carousel/lanac_6.jpg" class="d-block w-100" alt="Померање чланака ланца">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="Pictures/Carousel/lanac_7.jpg" class="d-block w-100" alt="Повезивање обртног ваљка и чланка ланца">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="Pictures/Carousel/lanac_8.jpg" class="d-block w-100" alt="Провера преклапања">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="Pictures/Carousel/lanac_9.jpg" class="d-block w-100" alt="Ослобађање обртног ваљка од погонског ланчаника">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="Pictures/Carousel/lanac_10.jpg" class="d-block w-100" alt="Dissolve Pattern">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="Pictures/Carousel/lanac_11.jpg" class="d-block w-100" alt="Приказивање скице осовинице">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="Pictures/Carousel/lanac_12.jpg" class="d-block w-100" alt="Приказивање скице обртног ваљка">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="Pictures/Carousel/lanac_13.jpg" class="d-block w-100" alt="Multiple mate mode">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="Pictures/Carousel/lanac_14.jpg" class="d-block w-100" alt="Повезивање скица">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="Pictures/Carousel/lanac_15.jpg" class="d-block w-100" alt="Path mate">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="Pictures/Carousel/lanac_16.jpg" class="d-block w-100" alt="Motion Analysis">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="Pictures/Carousel/lanac_17.jpg" class="d-block w-100" alt="Подешавања">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="Pictures/Carousel/lanac_18.jpg" class="d-block w-100" alt="Ланчани пар са два пара чланака ланца">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="Pictures/Carousel/lanac_19.jpg" class="d-block w-100" alt="Ланчани пар са троредним ланцем">
+                                </div>
+                              </div>
+                              <button class="carousel-control-prev" type="button" data-bs-target="#carousel_lanac_lancanog_para" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#carousel_lanac_lancanog_para" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="lancani_par_animacija">
+                      <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_lancani_par_animacija" aria-expanded="true" aria-controls="collapse_lancani_par_animacija">
+                        Троредни ланчани пар - принцип рада и анимација:
+                      </button>
+                    </h2>
+                    <div id="collapse_lancani_par_animacija" class="accordion-collapse collapse" aria-labelledby="lancani_par_animacija" data-bs-parent="#modeliranje_i_crtezi_lancanog_para">
+                      <div class="accordion-body">
+                        <ul class="nav nav-tabs" id="lancani_par_Tab" role="tablist">
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="dva_para_clanaka_lanca-tab" data-bs-toggle="tab" data-bs-target="#dva_para_clanaka_lanca" type="button" role="tab" aria-controls="dva_para_clanaka_lanca" aria-selected="true">Два пара чланака ланца</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="troredni_lanac-tab" data-bs-toggle="tab" data-bs-target="#troredni_lanac" type="button" role="tab" aria-controls="troredni_lanac" aria-selected="false">Троредни ланац</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="zip_sklopa-tab" data-bs-toggle="tab" data-bs-target="#zip_sklopa" type="button" role="tab" aria-controls="zip_sklopa" aria-selected="false">"Zip" склопа</button>
+                          </li>
+                        </ul>
+                        <div class="tab-content" id="lancani_par_animacija_TabContent">
+                          <div class="tab-pane show active" id="dva_para_clanaka_lanca" role="tabpanel" aria-labelledby="dva_para_clanaka_lanca-tab">
+                            <div class="card ratio ratio-16x9">
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/BmvWJD8N5SQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                          </div>
+                          <div class="tab-pane" id="troredni_lanac" role="tabpanel" aria-labelledby="troredni_lanac-tab">
+                            <div class="card ratio ratio-16x9">
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/DAIe3MxZUUk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                          </div>
+                          <div class="tab-pane" id="zip_sklopa" role="tabpanel" aria-labelledby="zip_sklopa-tab">
+                            <div class="card ratio ratio-16x9">
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/7ui33O8MczM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <nav class="card-header" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">&copy; Slobodan Ivković</li>
+                  <li class="breadcrumb-item"><a href="https://www.linkedin.com/in/slobodan-ivkovic-a08326ba"><img src="Pictures/Icons/linkedin.png" alt="linkedin logo"></a></li>
+                  <li class="breadcrumb-item"><a href="https://twitter.com/slobodan_iv"><img src="Pictures/Icons/twitter.png" alt="twitter logo"></a></li>
+                  <li class="breadcrumb-item"><a href="https://www.youtube.com/user/Mickijedini"><img src="Pictures/Icons/youtube.png" alt="youtube logo"></a></li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- container -->
+
+    
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script> -->
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>-->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
